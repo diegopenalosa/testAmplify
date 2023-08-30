@@ -17,6 +17,9 @@
       },
       "api": {
         "testamplify": {}
+      },
+      "storage": {
+        "imagesTestAmplify": {}
       }
     }
   }

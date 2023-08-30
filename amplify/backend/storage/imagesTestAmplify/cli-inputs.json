@@ -1,0 +1,14 @@
+{
+  "resourceName": "imagesTestAmplify",
+  "policyUUID": "3851cf1a",
+  "bucketName": "testamplifye485617afbd64b439f0ab4648f674f93",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}
