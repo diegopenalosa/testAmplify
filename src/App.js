@@ -17,8 +17,14 @@ import {
   createNote as createNoteMutation,
   deleteNote as deleteNoteMutation,
 } from "./graphql/mutations";
+import {
+  NavBarHeader 
+ } from './ui-components';
+ 
+ 
 
-const App = ({ signOut }) => {
+
+const App = ({ signOut, user }) => {
   const [notes, setNotes] = useState([]);
 
   useEffect(() => {
@@ -71,7 +77,9 @@ const App = ({ signOut }) => {
 
   return (
     <View className="App">
-      <Heading level={1}>My Notes App</Heading>
+      <NavBarHeader />
+      <Heading level={1}>My First Notes App</Heading>
+      <h1>Hello {user.username}</h1>
       <View as="form" margin="3rem 0" onSubmit={createNote}>
         <Flex direction="row" justifyContent="center">
           <TextField
